@@ -53,9 +53,10 @@ public class airCheck
         {
           sub_el = (Element)sub_n_list.item(j);
           v_txt = sub_el.getFirstChild();
-          result = result + info[k] + " : " + v_txt.getNodeValue() + "\n";
+          result += info[k] + " : " + v_txt.getNodeValue() + "\n";
         }
       }
+      result += "\n";
     }
     return result;
   }

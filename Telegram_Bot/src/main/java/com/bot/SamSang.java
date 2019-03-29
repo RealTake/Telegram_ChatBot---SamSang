@@ -56,7 +56,7 @@ public class SamSang extends TelegramLongPollingBot {
 							send.setText("전국 대기 맑음입니다.").setParseMode(ParseMode.MARKDOWN);
 						}
 						else
-							send.setText("다음 결과는\n" + check.excute(args) + "입니다.").setParseMode(ParseMode.MARKDOWN);
+							send.setText("다음 결과는\n" + fba.excute() + "입니다.").setParseMode(ParseMode.MARKDOWN);
 					} catch (Exception e) {
 					}
 					break;
